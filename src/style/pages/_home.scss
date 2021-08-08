@@ -5,12 +5,13 @@
 
   &:after {
     content: '';
-    height: 900px;
-    width: 900px;
-    background: $color-3;
+    height: 700px;
+    width: 700px;
+    background-image: url("https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?cs=srgb&dl=pexels-markus-spiske-2004161.jpg&fm=jpg");
+    background-size: cover;
     border-radius: 50%;
     position: absolute;
-    bottom: -480px;
+    bottom: -300px;
     right: 0px;
     z-index: -2;
     animation: homeAnim 15s infinite alternate;

@@ -11,7 +11,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "Lyon Béton",
+    title: "Béton",
     date: "Mars 2020",
     languages: ["Symfony", "Vue"],
     infos:

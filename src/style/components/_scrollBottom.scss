@@ -3,8 +3,9 @@
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  color: $black;
-  font-size: 1.7rem;
+ 
+  color: darkgrey;
+  font-size: 30px;
   perspective: 40px;
 
   &:hover .sb-main {
