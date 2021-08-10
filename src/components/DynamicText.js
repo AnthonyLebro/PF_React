@@ -46,7 +46,7 @@ const DynamicText = () => {
 
   return (
     <span className="dynamic-text">
-      <span className="simply">Friendly With </span>
+      <span className="simply">Friendly With</span>
       <span id="text-target"></span>
     </span>
   );

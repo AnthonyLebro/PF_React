@@ -10,8 +10,8 @@
     display: flex;
     width: 300px;
     text-align: left;
-    animation: color 30s alternate infinite;
-    perspective: 200px;
+    animation: color 15s alternate infinite;
+    perspective: 100px;
     transform: translateX(26px);
   }
   .word {
@@ -29,7 +29,7 @@
     }
   }
   .letter {
-    transform: translateZ(200px);
+    transform: translateZ(100px);
   }
   @keyframes anim {
     25% {

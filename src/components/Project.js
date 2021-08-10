@@ -86,7 +86,7 @@ const Project = (props) => {
         </div>
         <div className="button-container">
           <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover">
-            <span className="button">Voir le site</span>
+            <span className="button">Show Me</span>
           </a>
         </div>
       </motion.div>

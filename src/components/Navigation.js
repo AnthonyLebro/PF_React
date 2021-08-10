@@ -13,16 +13,16 @@ const Navigation = () => {
         <li className="nav-portfolio">Portfolio
           <ul className="nav-projects">
             <NavLink to="/projet-1" activeClassName="nav-active" className="hover">
-              <li>Projet 1</li>
+              <li>Project 1</li>
             </NavLink>
             <NavLink to="/projet-2" activeClassName="nav-active" className="hover">
-              <li>Projet 2</li>
+              <li>Project 2</li>
             </NavLink>
             <NavLink to="/projet-3" activeClassName="nav-active" className="hover">
-              <li>Projet 3</li>
+              <li>Project 3</li>
             </NavLink>
             <NavLink to="/projet-4" activeClassName="nav-active" className="hover">
-              <li>Projet 4</li>
+              <li>Project 4</li>
             </NavLink>
           </ul>
         </li>
