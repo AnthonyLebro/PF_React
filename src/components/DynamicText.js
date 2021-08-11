@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 const DynamicText = () => {
-  let array = ["Ruby", "JavaScrip", "Ruby On Rails", "React", "Python", "GitHub"];
+  let array = ["Ruby", "JavaScrip", "Ruby On Rails", "React", "Python", "GitHub", "Django"];
   let wordIndex = 0;
   let letterIndex = 0;
 

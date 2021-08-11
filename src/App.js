@@ -1,13 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Switch, Route, useLocation, useHistory, Redirect } from "react-router-dom";
 import Home from "./pages/Home";
 import {Project1, Project2, Project3, Project4} from "./pages/Projects";
 import Contact from "./pages/Contact";
 import { AnimatePresence } from "framer-motion";
+import DarkMode from "./components/DarkMode";
+import DarkBtn from "./components/DarkBtn";
+
+
 
 const App = () => {
   const location = useLocation();
   let history = useHistory();
+
+
+  const [darkMode,setDarkMode] = useState(null)
 
   useEffect(() => {
     const handleScrollToElement = (e) => {
@@ -61,6 +68,11 @@ const App = () => {
   }, [history]);
 
   return (
+    <DarkMode.Provider value = {{darkMode, 
+      toggleMode: () => {localStorage.setItem('ThemeContext:DarkMode', String(!darkMode));
+      setDarkMode(!darkMode);
+      }}}>
+        
     <AnimatePresence>
       <Switch location={location} key={location.pathname}>
         <Route exact path="/" component={Home} />
@@ -72,7 +84,9 @@ const App = () => {
         <Redirect to='/' />
       </Switch>
     </AnimatePresence>
+    </DarkMode.Provider>
   );
 };
 
 export default App;
+

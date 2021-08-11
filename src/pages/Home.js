@@ -5,6 +5,8 @@ import ButtonsBottom from "../components/ButtonsBottom";
 import DynamicText from "../components/DynamicText";
 import Mouse from "../components/Mouse";
 import { motion } from "framer-motion";
+import DarkBtn from "../components/DarkBtn";
+import DarkMode from "../components/DarkMode";
 
 const Home = () => {
 

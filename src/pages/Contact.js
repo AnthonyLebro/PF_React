@@ -7,6 +7,7 @@ import Logo from "../components/Logo";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Mouse from "../components/Mouse";
 import { motion } from "framer-motion";
+import DarkBtn from "../components/DarkBtn";
 
 const Contact = () => {
   const pageTransition = {
@@ -37,32 +38,17 @@ const Contact = () => {
         transition={transition}
       >
         <Navigation />
+        <DarkBtn/>
         <Logo />
         <ContactForm />
         <div className="contact-infos">
           <div className="address">
             <div className="content">
               <h4>Adress</h4>
-              <p>127 rue de Fontenay</p>
               <p>92350 Le Plessis Robinson </p>
             </div>
           </div>
-          <div className="phone">
-            <div className="content">
-              <h4>Phone</h4>
-              <CopyToClipboard text="0678832421" className="hover">
-                <p
-                  style={{cursor: 'pointer'}}
-                  className="clipboard"
-                  onClick={() => {
-                    alert("Téléphone copié !");
-                  }}
-                >
-                  06 78 83 24 21
-                </p>
-              </CopyToClipboard>
-            </div>
-          </div>
+          
           <div className="email">
             <div className="content">
               <h4>Email</h4>

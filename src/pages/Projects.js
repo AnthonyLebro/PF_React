@@ -4,6 +4,7 @@ import ButtonsBottom from '../components/ButtonsBottom';
 import Logo from '../components/Logo';
 import Project from '../components/Project';
 import Mouse from '../components/Mouse';
+import DarkBtn from '../components/DarkBtn';
 
 export const Project1 = () => {
   return (
@@ -11,6 +12,7 @@ export const Project1 = () => {
       <Mouse />
       <div className="project">
         <Navigation />
+        <DarkBtn/>
         <Logo />
         <Project projectNumber={0} />
         <ButtonsBottom left={'/'} right={'/projet-2'} />
